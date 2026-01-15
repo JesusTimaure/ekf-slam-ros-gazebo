@@ -13,8 +13,6 @@ Through the use of odometry and landmark observation.
 - Sensors: Simulated range/bearing landmark observations
 - Environment: Gazebo environment with cylindrical pillars
 
-Entire EKF-SLAM is implemented in ROS
-
 <img width="2292" height="1291" alt="image" src="https://github.com/user-attachments/assets/f9c349f8-0881-4e7d-bac1-47fe5fcdc08f" />
 
 
