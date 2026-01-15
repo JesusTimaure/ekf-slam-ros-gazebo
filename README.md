@@ -1,2 +1,3 @@
-# ekf-slam-ros-gazebo
-This repository implements and evaluates EKF-SLAM for a mobile robot in ROS/Gazebo, using landmark-based perception through the use of Lidar sensor in an unknown environment.
+# EKF-SLAM in ROS/Gazebo
+This repository implements an Extended Kalman Filter (EKF) SLAM pipeline for a TurtleBot in a ROS–Gazebo simulation. The robot localizes itself and builds a map of an unknown environment by detecting cylindrical pillars as point landmarks by using a Lidar sensor.
+
