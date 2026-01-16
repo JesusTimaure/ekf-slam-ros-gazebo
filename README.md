@@ -24,11 +24,10 @@ The core SLAM pipeline is implemented from scratch and includes:
 - Measurement model: Range and bearing observations to landmarks
 - Data association: Handles unknown correspondence between measurements and landmarks
 - Estimation:EKF is used for joint estimation of robot pose and landmark positions, with full covariance propagation
-This allows to incrementally improve its pose and landmarks' estimates as more observations are collected
-
+This allows the robot to incrementally improve both pose and map estimates as new observations are incorporated, while also maintaning uncertainty estimates.
 
 ## Dependencies
-This project relies on the official TurtleBot3 ROS packages for simulation and manual control, which must be installed separately:
+This project relies on the official TurtleBot3 ROS packages for simulation and manual control, which must be installed separately
 
 ## Running the simulation
 Launch the main.launch file with roslaunch ekf_slam_sim main.launch
