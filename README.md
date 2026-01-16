@@ -1,6 +1,6 @@
 # EKF-SLAM in ROS/Gazebo
 This repository implements an Extended Kalman Filter (EKF) SLAM pipeline for a TurtleBot in a ROS–Gazebo simulation. 
-The robot can localize itself and build a map of an unknown environment by detecting cylindrical pillars as point landmarks using a LiDAR sensor
+The robot can localize itself and build a map of an unknown environment by detecting cylindrical pillars as point landmarks using a LiDAR sensor.
 
 ## Problem Formulation
 The robot operates in an unknown 2D environment and must simultaneously estimate:
@@ -18,11 +18,12 @@ using odometry and landmark observations.
 <img width="2292" height="1291" alt="image" src="https://github.com/user-attachments/assets/f9c349f8-0881-4e7d-bac1-47fe5fcdc08f" />
 
 ## EKF-SLAM Method
-- State vector: Robot pose + Landmark positions
-- Motion model: Wheel odometry
-- Measurement model: Range and bearing to landmarks
-- Data association: Handles unknown correspondence of measurements
-- Filter:EKF is used for joint estimation of robot pose and landmark positions with uncertainties
+The core SLAM pipeline is implemented from scratch and includes:
+- Joint state vector: Robot pose + Landmark positions
+- Motion model: Differential-drive motion given by wheel odometry
+- Measurement model: Range and bearing observations to landmarks
+- Data association: Handles unknown correspondence between measurements and landmarks
+- Estimation:EKF is used for joint estimation of robot pose and landmark positions, with full covariance propagation
 This allows to incrementally improve its pose and landmarks' estimates as more observations are collected
 
 
