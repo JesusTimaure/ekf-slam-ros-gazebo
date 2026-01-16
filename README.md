@@ -4,7 +4,7 @@ The robot can localize itself and build a map of an unknown environment by detec
 
 ## Problem Formulation
 The robot operates in an unknown 2D environment and must simultaneously estimate:
-- Its own pose \((x, y, \theta)\)
+- Its own pose (x, y, θ)
 - The positions of static landmarks
 using odometry and landmark observations.
 
