@@ -30,7 +30,9 @@ This allows the robot to incrementally improve both pose and map estimates as ne
 This project relies on the official TurtleBot3 ROS packages for simulation and manual control, which must be installed separately
 
 ## Running the simulation
-Launch the main.launch file with roslaunch ekf_slam_sim main.launch
+Launch the main.launch file with 
+$`roslaunch ekf_slam_sim main.launch`$
+
 This will automatically start:
 - Gazebo simulation
 - Remote control of the robot (via w, a, s, d)
