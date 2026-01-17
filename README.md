@@ -31,8 +31,9 @@ This project relies on the official TurtleBot3 ROS packages for simulation and m
 
 ## Running the simulation
 Launch the main.launch file with 
-$`roslaunch ekf_slam_sim main.launch`$
-
+````
+roslaunch ekf_slam_sim main.launch
+````
 This will automatically start:
 - Gazebo simulation
 - Remote control of the robot (via w, a, s, d)
